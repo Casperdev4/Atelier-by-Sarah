@@ -158,56 +158,85 @@ if (statsSection) {
 }
 
 // ========================================
-// FORMULAIRE DE CONTACT
+// FORMULAIRE DE CONTACT - WEBHOOK
 // ========================================
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+// URL du webhook - À REMPLACER par votre URL
+const WEBHOOK_URL = 'https://webprime.app/webhook/contact/9eab4709c0fa55009b436734114ecb1192d5b723c6a962cd8e1c85c40cc994df';
 
-        // Récupérer les données du formulaire
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
+async function submitToWebPrime(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
 
-        // Simulation d'envoi (à remplacer par un vrai backend)
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
+    // Vérification anti-spam honeypot
+    const honeypot = form.querySelector('[name="_gotcha"]');
+    if (honeypot && honeypot.value) {
+        return false;
+    }
 
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
-        submitBtn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+    btn.disabled = true;
 
-        setTimeout(() => {
-            // Afficher le message de succès
+    try {
+        const formData = new FormData(form);
+        const response = await fetch(WEBHOOK_URL, {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
+            // Message de succès
             alert('Merci pour votre message ! Je vous recontacterai dans les plus brefs délais.');
+            form.reset();
+        } else {
+            alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+        }
+    } catch (error) {
+        alert('Erreur de connexion. Veuillez réessayer.');
+    }
 
-            // Reset du formulaire
-            contactForm.reset();
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-        }, 1500);
-    });
+    btn.innerHTML = originalText;
+    btn.disabled = false;
+    return false;
 }
 
-// Formulaire popup
-const popupForm = document.getElementById('popupForm');
-if (popupForm) {
-    popupForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+async function submitPopupForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
 
-        const submitBtn = popupForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
+    // Vérification anti-spam honeypot
+    const honeypot = form.querySelector('[name="_gotcha"]');
+    if (honeypot && honeypot.value) {
+        return false;
+    }
 
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi...';
-        submitBtn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi...';
+    btn.disabled = true;
 
-        setTimeout(() => {
+    try {
+        const formData = new FormData(form);
+        const response = await fetch(WEBHOOK_URL, {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
             alert('Merci ! Je vous rappelle très rapidement.');
-            popupForm.reset();
+            form.reset();
             closePopup();
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-        }, 1500);
-    });
+        } else {
+            alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+        }
+    } catch (error) {
+        alert('Erreur de connexion. Veuillez réessayer.');
+    }
+
+    btn.innerHTML = originalText;
+    btn.disabled = false;
+    return false;
 }
 
 // ========================================

@@ -853,6 +853,15 @@ img {
     box-shadow: var(--shadow);
 }
 
+/* Honeypot anti-spam */
+.hp-wrap {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
 .form-group {
     margin-bottom: 20px;
 }

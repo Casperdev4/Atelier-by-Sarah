@@ -15,7 +15,7 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://webprime.app; frame-ancestors 'self';">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -371,10 +371,22 @@
             </div>
 
             <div class="contact-grid">
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" onsubmit="return submitToWebPrime(event)">
+                    <div class="hp-wrap">
+                        <label for="website">Votre site web :</label>
+                        <input type="text" id="website" name="_gotcha" autocomplete="off">
+                    </div>
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="source" value="contact">
+
                     <div class="form-group">
                         <label for="name">Nom complet *</label>
-                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        <input type="text" id="name" name="nom" required placeholder="Votre nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="tel" required placeholder="06 00 00 00 00">
                     </div>
 
                     <div class="form-group">
@@ -383,27 +395,23 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="phone">Téléphone *</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="06 00 00 00 00">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">Type de service</label>
-                        <select id="service" name="service">
+                        <label for="service">Type de service *</label>
+                        <select id="service" name="service" required>
                             <option value="">Sélectionnez un service</option>
-                            <option value="caf">Dossiers CAF (APL, RSA, Prime d'activité)</option>
-                            <option value="mdph">Dossiers MDPH</option>
-                            <option value="carte-grise">Carte grise / Cession véhicule</option>
-                            <option value="entreprise">Création / Gestion entreprise</option>
-                            <option value="courriers">Rédaction de courriers</option>
-                            <option value="surendettement">Dossier de surendettement</option>
-                            <option value="autre">Autre demande</option>
+                            <option value="Dossiers CAF">Dossiers CAF (APL, RSA, Prime d'activité)</option>
+                            <option value="Dossiers MDPH">Dossiers MDPH</option>
+                            <option value="Carte grise">Carte grise / Cession véhicule</option>
+                            <option value="Création entreprise">Création / Gestion entreprise</option>
+                            <option value="Rédaction courriers">Rédaction de courriers</option>
+                            <option value="Surendettement">Dossier de surendettement</option>
+                            <option value="Passeport / CNI">Passeport / Carte d'identité</option>
+                            <option value="Autre">Autre demande</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Votre message</label>
-                        <textarea id="message" name="message" placeholder="Décrivez votre besoin..."></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin..."></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary" style="width: 100%;">
@@ -540,21 +548,27 @@
         <div class="popup-content">
             <button class="popup-close" onclick="closePopup()">&times;</button>
             <h3 style="font-family: var(--font-heading); color: var(--primary-burgundy); margin-bottom: 20px; font-style: italic;">Demande de devis rapide</h3>
-            <form id="popupForm">
+            <form id="popupForm" onsubmit="return submitPopupForm(event)">
+                <div class="hp-wrap">
+                    <label for="popup_website">Votre site web :</label>
+                    <input type="text" id="popup_website" name="_gotcha" autocomplete="off">
+                </div>
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="source" value="popup">
                 <div class="form-group">
-                    <input type="text" placeholder="Votre nom" required>
+                    <input type="text" name="nom" placeholder="Votre nom" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" placeholder="Votre téléphone" required>
+                    <input type="tel" name="tel" placeholder="Votre téléphone" required>
                 </div>
                 <div class="form-group">
-                    <select>
+                    <select name="service">
                         <option value="">Type de service</option>
-                        <option value="caf">Dossiers CAF</option>
-                        <option value="mdph">Dossiers MDPH</option>
-                        <option value="carte-grise">Carte grise</option>
-                        <option value="entreprise">Création entreprise</option>
-                        <option value="autre">Autre</option>
+                        <option value="Dossiers CAF">Dossiers CAF</option>
+                        <option value="Dossiers MDPH">Dossiers MDPH</option>
+                        <option value="Carte grise">Carte grise</option>
+                        <option value="Création entreprise">Création entreprise</option>
+                        <option value="Autre">Autre</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary" style="width: 100%;">
