@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atelier Administratif by Sarah - Assistance administrative à domicile dans les Bouches-du-Rhône (13). Qualité, écoute et réactivité pour tous vos documents administratifs.">
+    <link rel="canonical" href="https://atelieradministratifbysarah.fr" />
+    <title>Aide Administrative - Assistance Administrative 13 Bouches-du-Rhône</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="./logo/apple-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo/android-icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./logo/android-icon-96x96.png">
+    <meta name="msapplication-TileImage" content="./logo/ms-icon-32x32.png">
+    <meta name="msapplication-TileImage" content="./logo/ms-icon-96x96.png">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self';">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Atelier by Sarah">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="faq.html">Blog</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:0608967801" class="phone-btn">
+                    <i class="fas fa-phone"></i>
+                    06 08 96 78 01
+                </a>
+                <button class="btn btn-primary" onclick="openPopup()">Contact</button>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Atelier Administratif</h1>
+                <div class="hero-subtitle-name">by Sarah</div>
+
+                <p class="hero-description">
+                    Pour tous vos documents administratifs
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openPopup()">
+                        Devis gratuit
+                    </button>
+                    <a href="services.html" class="btn btn-outline">
+                        Mes services
+                    </a>
+                </div>
+
+                <div class="hero-tags">
+                    <span class="hero-tag">Qualité</span>
+                    <span class="hero-tag">Écoute</span>
+                    <span class="hero-tag">Réactivité</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="atelier-by-sarah-hero.webp" alt="Sarah - Assistance administrative">
+
+                <div class="google-rating">
+                    <i class="fab fa-google" style="color: #4285f4; font-size: 20px;"></i>
+                    <div class="stars">★★★★★ 5/5</div>
+                    <span class="rating-text">480 avis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section propositions-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pourquoi nous choisir?</span>
+                <h2 class="section-title">Ce que je vous propose</h2>
+            </div>
+
+            <div class="propositions-grid">
+                <div class="proposition-card">
+                    <div class="proposition-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Accompagnement personnalisé</h3>
+                    <p>Chaque situation est unique. Nous prenons le temps d'écouter, comprendre et proposer des solutions adaptées à vos besoins.</p>
+                </div>
+
+                <div class="proposition-card">
+                    <div class="proposition-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>Réactivité et efficacité</h3>
+                    <p>Vos démarches sont traitées rapidement, avec rigueur et sans perte de temps. Nous savons à quel point certaines demandes sont urgentes.</p>
+                </div>
+
+                <div class="proposition-card">
+                    <div class="proposition-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Bienveillance et discrétion</h3>
+                    <p>Nos échanges se font toujours dans le respect, la confidentialité et sans jugement. Vous êtes accompagné(e) avec humanité.</p>
+                </div>
+
+                <div class="proposition-card">
+                    <div class="proposition-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Large éventail de services</h3>
+                    <p>De la CAF à la création d'entreprise, nous couvrons un grand nombre de démarches, pour particuliers comme professionnels.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">300<sup>+</sup></div>
+                    <div class="stat-text">documents rédigés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">72h<sup>+</sup></div>
+                    <div class="stat-text">en moyenne</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-text">de satisfaction client</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200<sup>+</sup></div>
+                    <div class="stat-text">personnes accompagnées</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--primary-pink-light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nos services</span>
+                <h2 class="section-title">Découvrez mes prestations</h2>
+                <p class="section-subtitle">Des solutions adaptées aux particuliers et aux professionnels</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="caf.png" alt="Dossiers CAF">
+                    </div>
+                    <div class="service-content">
+                        <h3>Dossiers CAF</h3>
+                        <p>APL, RSA, Prime d'activité, allocations familiales... Je monte et suis vos dossiers CAF de A à Z.</p>
+                        <a href="service-caf.html" class="service-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="aide-dossier-mdph.png" alt="Dossiers MDPH">
+                    </div>
+                    <div class="service-content">
+                        <h3>Dossiers MDPH</h3>
+                        <p>Constitution et suivi de vos dossiers de reconnaissance de handicap, AAH, carte mobilité.</p>
+                        <a href="service-mdph.html" class="service-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="carte-grise.jpg" alt="Carte grise">
+                    </div>
+                    <div class="service-content">
+                        <h3>Carte grise</h3>
+                        <p>Immatriculation, changement de propriétaire, déclaration de cession de véhicule.</p>
+                        <a href="service-carte-grise.html" class="service-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="dossier-surendettement.jpg" alt="Surendettement">
+                    </div>
+                    <div class="service-content">
+                        <h3>Surendettement</h3>
+                        <p>Constitution complète de votre dossier pour la commission de surendettement.</p>
+                        <a href="service-surendettement.html" class="service-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="aide-passeport.jpg" alt="Passeport & Identité">
+                    </div>
+                    <div class="service-content">
+                        <h3>Passeport & Identité</h3>
+                        <p>Préparation de vos dossiers de demande ou renouvellement de pièces d'identité.</p>
+                        <a href="service-passeport.html" class="service-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="archives-documents-administratifs.jpg" alt="Gestion administrative">
+                    </div>
+                    <div class="service-content">
+                        <h3>Gestion administrative</h3>
+                        <p>Rédaction de courriers, classement, gestion du courrier professionnel et plus encore.</p>
+                        <a href="service-gestion-administrative.html" class="service-link">
+                            En savoir plus <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn btn-secondary">
+                    <i class="fas fa-list"></i>
+                    Voir tous les services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div class="about-image">
+                    <img src="photo-sarah.jpg" alt="Sarah - Atelier Administratif" style="border-radius: 20px; box-shadow: var(--shadow);">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left;">Pourquoi choisir notre Atelier Administratif ?</h2>
+                    <p style="color: var(--gray-text); margin-bottom: 25px; line-height: 1.8;">
+                        Faire appel à l'Atelier by Sarah, c'est bénéficier d'un accompagnement administratif sur-mesure, réalisé avec écoute, précision et bienveillance.
+                    </p>
+                    <p style="color: var(--gray-text); margin-bottom: 30px; line-height: 1.8;">
+                        Nous traitons vos démarches avec sérieux, dans le respect des délais et de vos besoins, qu'il s'agisse de documents personnels ou de formalités professionnelles.
+                    </p>
+
+                    <div style="margin-bottom: 25px;">
+                        <div style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: var(--primary-burgundy); font-size: 20px; margin-top: 3px;"></i>
+                            <div>
+                                <h4 style="color: var(--primary-burgundy); margin-bottom: 5px; font-family: var(--font-heading);">Accompagnement rigoureux, réalisé avec précision</h4>
+                                <p style="color: var(--gray-text); font-size: 15px;">Chaque dossier est traité avec attention, pour une solution fiable, complète et personnalisée.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fas fa-check-circle" style="color: var(--primary-burgundy); font-size: 20px; margin-top: 3px;"></i>
+                            <div>
+                                <h4 style="color: var(--primary-burgundy); margin-bottom: 5px; font-family: var(--font-heading);">Réactivité et flexibilité garanties</h4>
+                                <p style="color: var(--gray-text); font-size: 15px;">Nous nous adaptons à votre emploi du temps pour fixer des rendez-vous à votre convenance, en présentiel ou à distance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-calendar-alt"></i>
+                            Prendre RDV
+                        </a>
+                        <a href="tel:0608967801" class="btn btn-outline">
+                            <i class="fas fa-phone"></i>
+                            Prendre RDV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-left">
+                    <span class="section-tag">FAQS</span>
+                    <h2 class="section-title">Besoin d'aide pour vos démarches ?</h2>
+
+                    <div class="faq-info-card">
+                        <p>Pas de stress, je suis disponible dans le département des Bouches-du-Rhône (13) et partout en France. Contactez-moi dès maintenant.</p>
+                        <a href="tel:0608967801" class="faq-phone">
+                            <div class="faq-phone-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>06 08 96 78 01</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>1. Comment prendre rendez-vous pour un devis ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Vous pouvez me contacter par téléphone au 06 08 96 78 01, par email ou via le formulaire de contact sur ce site. Je vous recontacte sous 24h pour discuter de vos besoins et établir un devis gratuit.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>2. Le devis est-il gratuit et sans engagement ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Oui, le devis est 100% gratuit et sans engagement. Je prends le temps d'évaluer votre situation avant de vous proposer une offre adaptée à vos besoins.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>3. Quels types de travaux réalisez-vous ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Je réalise tous types de démarches administratives : dossiers CAF, MDPH, carte grise, création d'entreprise, rédaction de courriers, contestation de PV, dossiers de surendettement et bien plus encore.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>4. Que se passe-t-il après la finalisation du dossier ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Une fois votre dossier finalisé, je vous transmets tous les documents et assure un suivi jusqu'à l'obtention de votre réponse. Je reste disponible pour toute question ou démarche complémentaire.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Demandez votre devis gratuit</h2>
+            </div>
+
+            <div class="contact-grid">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="06 00 00 00 00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Type de service</label>
+                        <select id="service" name="service">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="caf">Dossiers CAF (APL, RSA, Prime d'activité)</option>
+                            <option value="mdph">Dossiers MDPH</option>
+                            <option value="carte-grise">Carte grise / Cession véhicule</option>
+                            <option value="entreprise">Création / Gestion entreprise</option>
+                            <option value="courriers">Rédaction de courriers</option>
+                            <option value="surendettement">Dossier de surendettement</option>
+                            <option value="autre">Autre demande</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" placeholder="Décrivez votre besoin..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer ma demande
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Parlons de votre projet</h3>
+                    <p>Je suis à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos démarches administratives.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <span>06 08 96 78 01</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <span>ateliersospapiers@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Adresse</h4>
+                                <span>Place Jean Pellegrin, 13821 La Penne</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Horaires</h4>
+                                <span>Lun-Ven: 8h30-20h | Sam: 10h-20h | Dim: 10h-16h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-cta">
+                    <h2>Mon objectif :<br>Vous simplifier la vie administrative au quotidien.</h2>
+                    <button class="btn btn-primary" onclick="openPopup()">Obtenez un devis gratuit</button>
+                </div>
+
+                <div class="footer-newsletter">
+                    <span class="footer-newsletter-title">Abonnez-vous à notre newsletter</span>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Entrez votre courriel">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <h4 class="footer-title">Liens utiles</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="active">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="faq.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">&nbsp;</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">CGV</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Coordonnées</h4>
+                    <p style="margin-bottom: 15px;">Place Jean Pellegrin,<br>13821 La Penne, France.</p>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>06 08 96 78 01</span>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h4 class="footer-title">Horaires d'ouverture</h4>
+                    <p><span>Lun – Ven :</span> <span>08h30 – 20h00</span></p>
+                    <p><span>Samedi :</span> <span>10h00 – 20h00</span></p>
+                    <p><span>Dimanche :</span> <span>10h00 – 16h00</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025. Tous Droits Réservés.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/33608967801" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/33608967801" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <h3 style="font-family: var(--font-heading); color: var(--primary-burgundy); margin-bottom: 20px; font-style: italic;">Demande de devis rapide</h3>
+            <form id="popupForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Votre téléphone" required>
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option value="">Type de service</option>
+                        <option value="caf">Dossiers CAF</option>
+                        <option value="mdph">Dossiers MDPH</option>
+                        <option value="carte-grise">Carte grise</option>
+                        <option value="entreprise">Création entreprise</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Être rappelé(e)
+                </button>
+            </form>
+            <p style="text-align: center; margin-top: 15px; font-size: 14px; color: var(--gray-text);">
+                Ou appelez directement : <a href="tel:0608967801" style="color: var(--primary-burgundy); font-weight: 600;">06 08 96 78 01</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

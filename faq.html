@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Questions fréquentes sur les services d'assistance administrative d'Atelier by Sarah. Trouvez toutes les réponses à vos questions.">
+    <title>FAQ | Atelier by Sarah - Questions Fréquentes</title>
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self';">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Atelier by Sarah">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="faq.html" class="active">Blog</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:0608967801" class="phone-btn">
+                    <i class="fas fa-phone"></i>
+                    06 08 96 78 01
+                </a>
+                <button class="btn btn-primary" onclick="openPopup()">Contact</button>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Questions Fréquentes</h1>
+            <p>Retrouvez les réponses aux questions les plus courantes sur mes services d'assistance administrative.</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-left">
+                    <span class="section-tag">FAQS</span>
+                    <h2 class="section-title">Besoin d'aide pour vos démarches ?</h2>
+
+                    <div class="faq-info-card">
+                        <p>Pas de stress, je suis disponible dans le département des Bouches-du-Rhône (13) et partout en France. Contactez-moi dès maintenant.</p>
+                        <a href="tel:0608967801" class="faq-phone">
+                            <div class="faq-phone-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>06 08 96 78 01</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>1. Quels types de services proposez-vous ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Je propose une large gamme de services d'assistance administrative : dossiers CAF (APL, RSA, Prime d'activité), MDPH, bourses scolaires, carte d'identité, passeport, carte grise, visa, création d'entreprise, surendettement, rédaction de courriers, contestation de PV et bien plus encore.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>2. Intervenez-vous à domicile ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Oui, je me déplace à votre domicile dans les Bouches-du-Rhône (13) pour plus de confort et de praticité. Cela vous évite les déplacements et vous permet de rester dans un environnement familier. Je peux également travailler à distance si vous le préférez.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>3. Quelle est votre zone d'intervention ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                J'interviens principalement dans les Bouches-du-Rhône (13), notamment à La Penne, Marseille, Aubagne, La Ciotat, et les communes environnantes. Pour les clients plus éloignés, je propose également un accompagnement à distance par téléphone et visioconférence.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>4. Combien coûtent vos services ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Chaque situation étant unique, je propose des devis personnalisés et gratuits. Le tarif dépend de la complexité du dossier, du nombre de documents à traiter et du temps nécessaire. Contactez-moi pour recevoir un devis adapté à vos besoins, sans engagement de votre part.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>5. Le devis est-il gratuit ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Oui, le devis est 100% gratuit et sans engagement. Je prends le temps d'écouter vos besoins et d'évaluer votre situation avant de vous proposer une offre adaptée. Vous êtes libre d'accepter ou non, sans aucune obligation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>6. Comment se passe la prise de contact ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                C'est très simple ! Vous pouvez me contacter par téléphone au 06 08 96 78 01, par SMS, via le formulaire de contact sur ce site, ou par email à ateliersospapiers@gmail.com. Je vous recontacte sous 24h maximum pour discuter de votre besoin.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>7. Quel est le délai moyen de traitement ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Le délai moyen de traitement est de 72 heures pour la plupart des dossiers. Cependant, ce délai peut varier selon la complexité de votre situation. Pour les urgences, je fais mon maximum pour accélérer le traitement. Je vous tiens informé(e) à chaque étape.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>8. Mes données sont-elles sécurisées ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Absolument. La confidentialité de vos données est ma priorité. Vos documents et informations personnelles sont traités avec la plus grande discrétion et ne sont jamais partagés avec des tiers. Je respecte scrupuleusement le RGPD et les bonnes pratiques de protection des données.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>9. Quels sont vos horaires d'ouverture ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Je suis disponible avec des horaires flexibles : Lundi au Vendredi de 8h30 à 20h00, Samedi de 10h00 à 20h00, et Dimanche de 10h00 à 16h00. Pour les urgences, n'hésitez pas à me contacter, je fais mon possible pour vous répondre rapidement.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>10. Que se passe-t-il après la finalisation du dossier ?</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Une fois votre dossier finalisé, je vous transmets tous les documents et assure un suivi jusqu'à l'obtention de votre réponse. Je reste disponible pour toute question ou démarche complémentaire. Votre satisfaction est ma priorité !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--primary-burgundy); text-align: center;">
+        <div class="container">
+            <h2 style="color: var(--primary-white); font-family: var(--font-heading); font-size: 32px; margin-bottom: 15px; font-style: italic;">Vous n'avez pas trouvé la réponse à votre question ?</h2>
+            <p style="color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 30px;">
+                Contactez-moi directement, je me ferai un plaisir de vous répondre !
+            </p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="tel:0608967801" class="btn btn-primary">
+                    <i class="fas fa-phone"></i>
+                    06 08 96 78 01
+                </a>
+                <a href="index.html#contact" class="btn btn-outline" style="border-color: var(--primary-white); color: var(--primary-white);">
+                    <i class="fas fa-envelope"></i>
+                    Envoyer un message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-cta">
+                    <h2>Mon objectif :<br>Vous simplifier la vie administrative au quotidien.</h2>
+                    <button class="btn btn-primary" onclick="openPopup()">Obtenez un devis gratuit</button>
+                </div>
+
+                <div class="footer-newsletter">
+                    <span class="footer-newsletter-title">Abonnez-vous à notre newsletter</span>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Entrez votre courriel">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <h4 class="footer-title">Liens utiles</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="faq.html" class="active">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">&nbsp;</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">CGV</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Coordonnées</h4>
+                    <p style="margin-bottom: 15px;">Place Jean Pellegrin,<br>13821 La Penne, France.</p>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>06 08 96 78 01</span>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h4 class="footer-title">Horaires d'ouverture</h4>
+                    <p><span>Lun – Ven :</span> <span>08h30 – 20h00</span></p>
+                    <p><span>Samedi :</span> <span>10h00 – 20h00</span></p>
+                    <p><span>Dimanche :</span> <span>10h00 – 16h00</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025. Tous Droits Réservés.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/33608967801" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/33608967801" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <h3 style="font-family: var(--font-heading); color: var(--primary-burgundy); margin-bottom: 20px; font-style: italic;">Demande de devis rapide</h3>
+            <form id="popupForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Votre téléphone" required>
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option value="">Type de service</option>
+                        <option value="caf">Dossiers CAF</option>
+                        <option value="mdph">Dossiers MDPH</option>
+                        <option value="carte-grise">Carte grise</option>
+                        <option value="entreprise">Création entreprise</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Être rappelé(e)
+                </button>
+            </form>
+            <p style="text-align: center; margin-top: 15px; font-size: 14px; color: var(--gray-text);">
+                Ou appelez directement : <a href="tel:0608967801" style="color: var(--primary-burgundy); font-weight: 600;">06 08 96 78 01</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
