@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/atelier-by-sarah-hero.webp</image:loc>
+            <image:caption>Sarah, votre assistante administrative dans les Bouches-du-Rhône (13).</image:caption>
+            <image:title>Atelier Administratif by Sarah - Assistance administrative 13</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/photo-sarah.jpg</image:loc>
+            <image:caption>Sarah, experte en démarches administratives à domicile dans le 13.</image:caption>
+            <image:title>Sarah - Assistante administrative Bouches-du-Rhône</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/caf.png</image:loc>
+            <image:caption>Aide aux dossiers CAF : APL, RSA, Prime d'activité dans les Bouches-du-Rhône.</image:caption>
+            <image:title>Dossiers CAF - Atelier by Sarah</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/aide-dossier-mdph.png</image:loc>
+            <image:caption>Constitution de dossiers MDPH, AAH et carte mobilité dans le 13.</image:caption>
+            <image:title>Dossiers MDPH - Atelier by Sarah</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/services.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/logo.png</image:loc>
+            <image:caption>Logo Atelier Administratif by Sarah - Services administratifs Bouches-du-Rhône.</image:caption>
+            <image:title>Logo Atelier by Sarah</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/faq.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/logo.png</image:loc>
+            <image:caption>Questions fréquentes sur les services administratifs Atelier by Sarah.</image:caption>
+            <image:title>FAQ Atelier by Sarah</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/service-caf.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/caf.png</image:loc>
+            <image:caption>Aide pour vos dossiers CAF : APL, RSA, Prime d'activité à Marseille et dans le 13.</image:caption>
+            <image:title>Aide dossiers CAF Bouches-du-Rhône</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/service-mdph.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/aide-dossier-mdph.png</image:loc>
+            <image:caption>Accompagnement dossiers MDPH, AAH et carte mobilité dans les Bouches-du-Rhône.</image:caption>
+            <image:title>Aide dossiers MDPH Bouches-du-Rhône</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/service-carte-grise.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/carte-grise.jpg</image:loc>
+            <image:caption>Service carte grise, immatriculation et cession de véhicule dans le 13.</image:caption>
+            <image:title>Carte grise et immatriculation Bouches-du-Rhône</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/service-surendettement.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/dossier-surendettement.jpg</image:loc>
+            <image:caption>Aide à la constitution de dossier de surendettement Banque de France dans le 13.</image:caption>
+            <image:title>Dossier surendettement Bouches-du-Rhône</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/service-passeport.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/aide-passeport.jpg</image:loc>
+            <image:caption>Aide pour demande de passeport et carte d'identité dans les Bouches-du-Rhône.</image:caption>
+            <image:title>Passeport et carte d'identité Bouches-du-Rhône</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://atelieradministratifbysarah.fr/service-gestion-administrative.html</loc>
+        <lastmod>2025-12-28</lastmod>
+
+        <image:image>
+            <image:loc>https://atelieradministratifbysarah.fr/archives-documents-administratifs.jpg</image:loc>
+            <image:caption>Gestion administrative, classement et rédaction de courriers dans le 13.</image:caption>
+            <image:title>Gestion administrative Bouches-du-Rhône</image:title>
+        </image:image>
+    </url>
+</urlset>
