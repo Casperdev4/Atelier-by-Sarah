@@ -165,17 +165,14 @@ const WEBHOOK_URL = 'https://webprime.app/webhook/contact/9eab4709c0fa55009b4367
 
 async function submitToWebPrime(e) {
     e.preventDefault();
-    const form = e.target;
+    const form = document.getElementById('contactForm');
     const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.innerHTML;
+    const originalText = btn.textContent;
 
     // Vérification anti-spam honeypot
-    const honeypot = form.querySelector('[name="_gotcha"]');
-    if (honeypot && honeypot.value) {
-        return false;
-    }
+    if (form._gotcha && form._gotcha.value) return false;
 
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+    btn.textContent = 'Envoi en cours...';
     btn.disabled = true;
 
     try {
@@ -186,34 +183,30 @@ async function submitToWebPrime(e) {
         });
 
         if (response.ok) {
-            // Message de succès
-            alert('Merci pour votre message ! Je vous recontacterai dans les plus brefs délais.');
-            form.reset();
+            window.location.href = 'https://atelieradministratifbysarah.fr/';
         } else {
             alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
     } catch (error) {
         alert('Erreur de connexion. Veuillez réessayer.');
+        btn.textContent = originalText;
+        btn.disabled = false;
     }
-
-    btn.innerHTML = originalText;
-    btn.disabled = false;
     return false;
 }
 
 async function submitPopupForm(e) {
     e.preventDefault();
-    const form = e.target;
+    const form = document.getElementById('popupForm');
     const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.innerHTML;
+    const originalText = btn.textContent;
 
     // Vérification anti-spam honeypot
-    const honeypot = form.querySelector('[name="_gotcha"]');
-    if (honeypot && honeypot.value) {
-        return false;
-    }
+    if (form._gotcha && form._gotcha.value) return false;
 
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi...';
+    btn.textContent = 'Envoi en cours...';
     btn.disabled = true;
 
     try {
@@ -224,18 +217,17 @@ async function submitPopupForm(e) {
         });
 
         if (response.ok) {
-            alert('Merci ! Je vous rappelle très rapidement.');
-            form.reset();
-            closePopup();
+            window.location.href = 'https://atelieradministratifbysarah.fr/';
         } else {
             alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
         }
     } catch (error) {
         alert('Erreur de connexion. Veuillez réessayer.');
+        btn.textContent = originalText;
+        btn.disabled = false;
     }
-
-    btn.innerHTML = originalText;
-    btn.disabled = false;
     return false;
 }
 
