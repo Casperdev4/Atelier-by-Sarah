@@ -25,6 +25,64 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Atelier Administratif by Sarah",
+        "description": "Assistance administrative à domicile dans les Bouches-du-Rhône (13). CAF, MDPH, carte grise, surendettement, passeport et gestion administrative.",
+        "url": "https://atelieradministratifbysarah.fr",
+        "telephone": "+33608967801",
+        "email": "ateliersospapiers@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Place Jean Pellegrin",
+            "addressLocality": "La Penne-sur-Huveaune",
+            "postalCode": "13821",
+            "addressRegion": "Bouches-du-Rhône",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.2833,
+            "longitude": 5.5167
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:30",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:00",
+                "closes": "20:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "16:00"
+            }
+        ],
+        "priceRange": "€€",
+        "image": "https://atelieradministratifbysarah.fr/logo.png",
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Bouches-du-Rhône"
+        },
+        "serviceType": ["Assistance administrative", "Aide dossiers CAF", "Aide dossiers MDPH", "Carte grise", "Dossier surendettement", "Passeport et carte d'identité", "Gestion administrative"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "480",
+            "bestRating": "5"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
@@ -67,7 +125,7 @@
     <header class="header">
         <div class="container">
             <a href="https://atelieradministratifbysarah.fr" class="logo">
-                <img src="logo.png" alt="Atelier by Sarah">
+                <img src="logo.png" alt="Atelier by Sarah" width="500" height="500">
             </a>
 
             <nav class="nav-menu" id="navMenu">
@@ -120,7 +178,7 @@
             </div>
 
             <div class="hero-image">
-                <img src="atelier-by-sarah-hero.webp" alt="Sarah - Assistance administrative">
+                <img src="atelier-by-sarah-hero.webp" alt="Sarah - Assistance administrative" width="1000" height="667">
 
                 <div class="google-rating">
                     <i class="fab fa-google" style="color: #4285f4; font-size: 20px;"></i>
@@ -204,12 +262,12 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="caf.png" alt="Dossiers CAF">
+                        <img src="caf.png" alt="Dossiers CAF" width="850" height="727" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Dossiers CAF</h3>
                         <p>APL, RSA, Prime d'activité, allocations familiales... Je monte et suis vos dossiers CAF de A à Z.</p>
-                        <a href="service-caf.html" class="service-link">
+                        <a href="aide-dossier-caf.html" class="service-link">
                             En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -217,12 +275,12 @@
 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="aide-dossier-mdph.png" alt="Dossiers MDPH">
+                        <img src="aide-dossier-mdph.png" alt="Dossiers MDPH" width="800" height="500" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Dossiers MDPH</h3>
                         <p>Constitution et suivi de vos dossiers de reconnaissance de handicap, AAH, carte mobilité.</p>
-                        <a href="service-mdph.html" class="service-link">
+                        <a href="aide-dossier-mdph.html" class="service-link">
                             En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -230,12 +288,12 @@
 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="carte-grise.jpg" alt="Carte grise">
+                        <img src="carte-grise.jpg" alt="Carte grise" width="1400" height="1035" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Carte grise</h3>
                         <p>Immatriculation, changement de propriétaire, déclaration de cession de véhicule.</p>
-                        <a href="service-carte-grise.html" class="service-link">
+                        <a href="aide-dossier-carte-grise.html" class="service-link">
                             En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -243,12 +301,12 @@
 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="dossier-surendettement.jpg" alt="Surendettement">
+                        <img src="dossier-surendettement.jpg" alt="Surendettement" width="932" height="582" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Surendettement</h3>
                         <p>Constitution complète de votre dossier pour la commission de surendettement.</p>
-                        <a href="service-surendettement.html" class="service-link">
+                        <a href="aide-dossier-surendettement.html" class="service-link">
                             En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -256,12 +314,12 @@
 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="aide-passeport.jpg" alt="Passeport & Identité">
+                        <img src="aide-passeport.jpg" alt="Passeport & Identité" width="1600" height="1212" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Passeport & Identité</h3>
                         <p>Préparation de vos dossiers de demande ou renouvellement de pièces d'identité.</p>
-                        <a href="service-passeport.html" class="service-link">
+                        <a href="aide-dossier-passeport.html" class="service-link">
                             En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -269,12 +327,12 @@
 
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="archives-documents-administratifs.jpg" alt="Gestion administrative">
+                        <img src="archives-documents-administratifs.jpg" alt="Gestion administrative" width="848" height="566" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Gestion administrative</h3>
                         <p>Rédaction de courriers, classement, gestion du courrier professionnel et plus encore.</p>
-                        <a href="service-gestion-administrative.html" class="service-link">
+                        <a href="aide-dossier-gestion-administrative.html" class="service-link">
                             En savoir plus <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -294,7 +352,7 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
                 <div class="about-image">
-                    <img src="photo-sarah.jpg" alt="Sarah - Atelier Administratif" style="border-radius: 20px; box-shadow: var(--shadow);">
+                    <img src="photo-sarah.jpg" alt="Sarah - Atelier Administratif" width="1242" height="1510" loading="lazy" style="border-radius: 20px; box-shadow: var(--shadow);">
                 </div>
                 <div class="about-content">
                     <h2 class="section-title" style="text-align: left;">Pourquoi choisir notre Atelier Administratif ?</h2>
