@@ -1,8 +1,4 @@
-/* ========================================
-   ATELIER BY SARAH - Styles Principaux
-   ======================================== */
 
-/* Variables CSS - Couleurs exactes du site */
 :root {
     --primary-burgundy: #7C2A37;
     --primary-pink-light: #F8E6E3;
@@ -19,7 +15,6 @@
     --font-body: 'Open Sans', sans-serif;
 }
 
-/* Reset */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -54,14 +49,12 @@ img {
     display: block;
 }
 
-/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Boutons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -108,9 +101,6 @@ img {
     color: var(--primary-white);
 }
 
-/* ========================================
-   HEADER / NAVIGATION
-   ======================================== */
 .header {
     position: fixed;
     top: 0;
@@ -201,7 +191,6 @@ img {
     color: var(--primary-burgundy);
 }
 
-/* Menu Mobile */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -217,9 +206,6 @@ img {
     transition: var(--transition);
 }
 
-/* ========================================
-   HERO SECTION
-   ======================================== */
 .hero {
     padding: 120px 0 60px;
     background-color: var(--primary-cream);
@@ -350,9 +336,6 @@ img {
     font-weight: 500;
 }
 
-/* ========================================
-   SECTIONS GÉNÉRALES
-   ======================================== */
 .section {
     padding: 80px 0;
 }
@@ -388,9 +371,6 @@ img {
     margin: 0 auto;
 }
 
-/* ========================================
-   SECTION CE QUE JE PROPOSE
-   ======================================== */
 .propositions-section {
     background-color: var(--primary-cream);
     position: relative;
@@ -443,7 +423,6 @@ img {
     line-height: 1.6;
 }
 
-/* Stats */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -472,9 +451,6 @@ img {
     color: var(--gray-text);
 }
 
-/* ========================================
-   SECTION FAQ
-   ======================================== */
 .faq-section {
     background-color: var(--primary-cream);
     padding: 80px 0;
@@ -594,9 +570,6 @@ img {
     line-height: 1.7;
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
 .footer {
     background-color: var(--primary-blue-gray);
     color: var(--primary-white);
@@ -767,9 +740,6 @@ img {
     border-radius: 50%;
 }
 
-/* ========================================
-   SECTION SERVICES
-   ======================================== */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -832,9 +802,6 @@ img {
     color: var(--primary-pink-medium);
 }
 
-/* ========================================
-   SECTION CONTACT
-   ======================================== */
 .contact-section {
     background-color: var(--primary-cream);
 }
@@ -853,7 +820,6 @@ img {
     box-shadow: var(--shadow);
 }
 
-/* Honeypot anti-spam */
 .hp-wrap {
     position: absolute;
     left: -9999px;
@@ -944,9 +910,6 @@ img {
     color: var(--gray-text);
 }
 
-/* ========================================
-   PAGE SERVICES
-   ======================================== */
 .page-hero {
     padding: 140px 0 60px;
     background-color: var(--primary-cream);
@@ -999,9 +962,6 @@ img {
     font-size: 14px;
 }
 
-/* ========================================
-   POPUP CONTACT
-   ======================================== */
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -1064,7 +1024,6 @@ img {
     color: var(--primary-white);
 }
 
-/* WhatsApp Button */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -1088,10 +1047,6 @@ img {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-/* Section About */
 .about-image img {
     width: 100%;
     max-width: 500px;
@@ -1167,7 +1122,6 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* About section responsive */
     .about-image {
         text-align: center;
     }
@@ -1243,7 +1197,6 @@ img {
         grid-template-columns: 1fr;
     }
 
-    /* About section mobile */
     .section > .container > div[style*="grid-template-columns: 1fr 1fr"] {
         grid-template-columns: 1fr !important;
         text-align: center;
@@ -1285,7 +1238,6 @@ img {
     }
 }
 
-/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1306,9 +1258,6 @@ img {
     animation: fadeInUp 0.6s ease forwards;
 }
 
-/* ========================================
-   SERVICE DETAIL PAGES
-   ======================================== */
 .breadcrumb {
     font-size: 14px;
     margin-bottom: 20px;
@@ -1444,7 +1393,6 @@ img {
     color: var(--primary-burgundy);
 }
 
-/* Sidebar */
 .service-detail-sidebar {
     position: sticky;
     top: 120px;
@@ -1498,7 +1446,6 @@ img {
     font-size: 12px;
 }
 
-/* Responsive service detail */
 @media (max-width: 1024px) {
     .service-detail-grid {
         grid-template-columns: 1fr;
