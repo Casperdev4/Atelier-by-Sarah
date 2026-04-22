@@ -125,7 +125,9 @@ img {
 }
 
 .logo img {
-    height: 50px;
+    height: 90px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo-text {
@@ -1208,6 +1210,10 @@ img {
 
     .about-content div[style*="display: flex"] {
         justify-content: center;
+    }
+
+    .logo img {
+    height: 70px;
     }
 }
 
