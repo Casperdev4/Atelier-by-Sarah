@@ -1163,6 +1163,10 @@ img {
         font-size: 32px;
     }
 
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
     .section-title {
         font-size: 28px;
     }
@@ -1220,6 +1224,10 @@ img {
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 26px;
+    }
+
+    .page-hero h1 {
+        font-size: 30px;
     }
 
     .hero-buttons {
